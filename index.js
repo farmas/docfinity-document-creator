@@ -10,7 +10,7 @@ console.log(`STARTING: ${new Date().toLocaleTimeString()}`);
     let uploadData = new FormData();
     uploadData.append('json', '1');
     uploadData.append('entryMethod', 'FILE_UPLOAD');
-    uploadData.append('upload_files', fs.createReadStream('/Users/farmas/dev/temp/docfinity-document-creator/file.txt'));
+    uploadData.append('upload_files', fs.createReadStream('./file.txt'));
 
     let uploadConfig = {
       method: 'post',
