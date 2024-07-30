@@ -6,7 +6,7 @@ const API_KEY =  process.argv[2];
 
 console.log(`STARTING: ${new Date().toLocaleTimeString()}`);
 (async () => {
-  for (let index = 0; index < 40000; index++) {
+  for (let index = 0; index < 10000; index++) {
     let uploadData = new FormData();
     uploadData.append('json', '1');
     uploadData.append('entryMethod', 'FILE_UPLOAD');
